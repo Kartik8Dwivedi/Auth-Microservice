@@ -25,9 +25,7 @@ const prepareAndStartServer = () => {
             const Role1 = await Role.findByPk(1)
             User1.addRole(Role1);
          */
-                    const User1 = await User.findByPk(1)
-            const Role1 = await Role.findByPk(1)
-            User1.addRole(Role1);
+
     });
 }
 
