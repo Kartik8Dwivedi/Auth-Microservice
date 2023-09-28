@@ -35,11 +35,11 @@ const signIn = async (req,res) => {
             err: {}
         })
     } catch (error) {
-        return res.status(500).json({
+        return res.status(400).json({
             message: "Something went wrong",
             data: {},
             success: false,
-            err: error
+            error
         })
     }
 }
