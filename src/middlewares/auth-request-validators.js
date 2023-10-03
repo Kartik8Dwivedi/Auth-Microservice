@@ -20,7 +20,7 @@ const validateIsAdminRequest = (req, res, next) => {
             err: 'User id is missing'
         })
     }
-    next();
+    next();dddd
 }
 
 module.exports = {
