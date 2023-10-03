@@ -32,7 +32,10 @@ class UserService{
             });
             return token;
         } catch (error) {
-            console.log("Something went wrong in the service layer")
+            if (error.name == "AttributeNotFound"){
+                throw error;
+            }
+              console.log("Something went wrong in the service layer");
             throw error;
         }
     }
